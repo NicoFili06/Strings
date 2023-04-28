@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Filippini.Nicolò._3i.MAUIString.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Hello, World!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Welcome to .NET Multi-platform App UI"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <StackLayout>
+                <Label Text="Inserisci una stringa:" />
+                <Entry x:Name="InputEntry" />
+                <Button Text="Elabora" Clicked="OnCounterClicked" />
+                <Label Text="Risultati:" />
+                <Label x:Name="Maiuscola" />
+                <Label x:Name="Minuscola" />
+                <Label x:Name="Capitalized" />
+                <Label x:Name="Palindroma" />
+                <Label x:Name="Reverse" />
+                <Label x:Name="NumParole" />
+                <Label x:Name="NumLettere" />
+                <Label x:Name="Alfanumerica" />
+            </StackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
